@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord CSS Snippets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="app-header">
+        <div class="logo">
+            <span class="logo-accent">Discord</span> CSS Snippets
+        </div>
+    </header>
+
+    <main class="snippets-container">
+        <div class="snippet-row">
+            <div class="snippet-image-column">
+                <div class="image-card">
+                    <div class="card-image-container">
+                        <img src="images/voice-button-minimize.gif" alt="Profile Buttons Minimize">
+                    </div>
+                </div>
+            </div>
+            <div class="snippet-code-column">
+                <div class="code-console">
+                    <div class="console-header">
+                        <div class="console-title">Profile Buttons Minimize</div>
+                        <button class="copy-btn">
+                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="btn-text">Copy Code</span>
+                        </button>
+                    </div>
+                    <div class="console-body">
+                        <pre><code class="language-css">@keyframes gear-spin-forward {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(180deg); }
+}
+
+@keyframes gear-spin-reverse {
+    from { transform: rotate(180deg); }
+    to { transform: rotate(0deg); }
+}
+
+section[class*="panels__"] div[class*="buttons__"]:not(:hover) > :not(button[aria-label="User Settings"]) {
+    opacity: 0 !important;
+    width: 0px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+section[class*="panels__"] div[class*="buttons__"]:not(:hover) button[aria-label="User Settings"] [class*="contents__"] {
+    animation: gear-spin-reverse 0.8s ease-in-out 1;
+}
+
+section[class*="panels__"] div[class*="buttons__"]:hover > * {
+    opacity: 1 !important;
+    width: 32px !important;
+    pointer-events: auto;
+    transition: all 0.6s ease-in-out;
+}
+
+section[class*="panels__"] div[class*="buttons__"]:hover button[aria-label="User Settings"] [class*="contents__"] {
+    animation: gear-spin-forward 0.8s ease-out 1;
+}
+
+section[class*="panels__"] button[aria-label="User Settings"] {
+    opacity: 1 !important;
+    width: 32px !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet-row">
+            <div class="snippet-image-column">
+                <div class="image-card">
+                    <div class="card-image-container">
+                        <img src="images/hide-nitro-button.png" alt="Hides the nitro shop button">
+                    </div>
+                </div>
+            </div>
+            <div class="snippet-code-column">
+                <div class="code-console">
+                    <div class="console-header">
+                        <div class="console-title">Hides the nitro shop button</div>
+                        <button class="copy-btn">
+                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="btn-text">Copy Code</span>
+                        </button>
+                    </div>
+                    <div class="console-body">
+                        <pre><code class="language-css">[class*="channel__"] [href="/store"] {
+    display: none !important;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet-row">
+            <div class="snippet-image-column">
+                <div class="image-card">
+                    <div class="card-image-container">
+                        <img src="images/game-fix.png" alt="Fixes the color of game toggle button">
+                    </div>
+                </div>
+            </div>
+            <div class="snippet-code-column">
+                <div class="code-console">
+                    <div class="console-header">
+                        <div class="console-title">Fixes the color of game toggle button</div>
+                        <button class="copy-btn">
+                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="btn-text">Copy Code</span>
+                        </button>
+                    </div>
+                    <div class="console-body">
+                        <pre><code class="language-css">button[class*="button__"][class*="lookBlank__"] {
+    color: hsla(0, 0%, 100%, .9) !important;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet-row">
+            <div class="snippet-image-column">
+                <div class="image-card">
+                    <div class="card-image-container">
+                        <img src="images/channel-fix.png"
+                            alt="Makes text channels have capitalization and spaces instead of dashes">
+                    </div>
+                </div>
+            </div>
+            <div class="snippet-code-column">
+                <div class="code-console">
+                    <div class="console-header">
+                        <div class="console-title">Makes text channels have capitalization and spaces instead of dashes
+                        </div>
+                        <button class="copy-btn">
+                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="btn-text">Copy Code</span>
+                        </button>
+                    </div>
+                    <div class="console-body">
+                        <pre><code class="language-css">[data-list-item-id^=channels___],
+[class^=titleWrapper] > h1, 
+[class^=resultChannel], 
+[class^=channelMention], 
+[class^=placeholder][class*=slateTextArea] 
+{
+    text-transform: capitalize;
+}
+
+@font-face {
+    font-family: "Dashless";
+    src: url("https://vendicated.github.io/random-files/Dashless.woff2") format("woff2");
+}
+
+[data-list-item-id^=channels___], /* channel list */
+[class^=titleWrapper] > h1, /* top bar with topic */
+[class^=resultChannel], /* channel name in search */
+[class^=channelMention], /* channel mentions in chat */
+[class^=placeholder][class*=slateTextArea] /* "Send a message in #blah" */
+{
+    font-family: "Dashless", var(--font-primary);
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="toast-notification" id="copy-toast">
+        <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none"
+            stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+        <span>CSS Snippet Copied!</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
