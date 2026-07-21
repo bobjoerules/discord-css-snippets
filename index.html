@@ -23,12 +23,19 @@
                     <div class="card-image-container">
                         <img src="images/voice-button-minimize.gif" alt="Profile Buttons Minimize">
                     </div>
+                    <div class="card-info">
+                        <div class="author-area">Created by <span class="author-name">Bobjoerules</span></div>
+                    </div>
                 </div>
             </div>
             <div class="snippet-code-column">
                 <div class="code-console">
                     <div class="console-header">
                         <div class="console-title">Profile Buttons Minimize</div>
+                        <div class="console-tabs">
+                            <button class="console-tab active" data-tab="code">Code</button>
+                            <button class="console-tab" data-tab="desc">Description</button>
+                        </div>
                         <button class="copy-btn">
                             <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
                                 stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -39,7 +46,8 @@
                         </button>
                     </div>
                     <div class="console-body">
-                        <pre><code class="language-css">@keyframes gear-spin-forward {
+                        <div class="tab-content active" data-tab-panel="code">
+                            <pre><code class="language-css">@keyframes gear-spin-forward {
     from { transform: rotate(0deg); }
     to { transform: rotate(180deg); }
 }
@@ -81,6 +89,14 @@ section[class*="panels__"] button[aria-label="User Settings"] {
     justify-content: center;
     align-items: center;
 }</code></pre>
+                        </div>
+                        <div class="tab-content" data-tab-panel="desc">
+                            <div class="description-tab-body">
+                                <p class="snippet-desc">Minimizes the profile panel buttons (Mute, Deafen, Settings)
+                                    into a single settings cog when not hovered. Hovering over the buttons reveals them
+                                    with a smooth spin animation.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -92,73 +108,18 @@ section[class*="panels__"] button[aria-label="User Settings"] {
                     <div class="card-image-container">
                         <img src="images/hide-nitro-button.png" alt="Hides the nitro shop button">
                     </div>
+                    <div class="card-info">
+                        <div class="author-area">Created by <span class="author-name">Bobjoerules</span></div>
+                    </div>
                 </div>
             </div>
             <div class="snippet-code-column">
                 <div class="code-console">
                     <div class="console-header">
                         <div class="console-title">Hides the nitro shop button</div>
-                        <button class="copy-btn">
-                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
-                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                            <span class="btn-text">Copy Code</span>
-                        </button>
-                    </div>
-                    <div class="console-body">
-                        <pre><code class="language-css">[class*="channel__"] [href="/store"] {
-    display: none !important;
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="snippet-row">
-            <div class="snippet-image-column">
-                <div class="image-card">
-                    <div class="card-image-container">
-                        <img src="images/game-fix.png" alt="Fixes the color of game toggle button">
-                    </div>
-                </div>
-            </div>
-            <div class="snippet-code-column">
-                <div class="code-console">
-                    <div class="console-header">
-                        <div class="console-title">Fixes the color of game toggle button</div>
-                        <button class="copy-btn">
-                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
-                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-                            </svg>
-                            <span class="btn-text">Copy Code</span>
-                        </button>
-                    </div>
-                    <div class="console-body">
-                        <pre><code class="language-css">button[class*="button__"][class*="lookBlank__"] {
-    color: hsla(0, 0%, 100%, .9) !important;
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="snippet-row">
-            <div class="snippet-image-column">
-                <div class="image-card">
-                    <div class="card-image-container">
-                        <img src="images/channel-fix.png"
-                            alt="Makes text channels have capitalization and spaces instead of dashes">
-                    </div>
-                </div>
-            </div>
-            <div class="snippet-code-column">
-                <div class="code-console">
-                    <div class="console-header">
-                        <div class="console-title">Makes text channels have capitalization and spaces instead of dashes
+                        <div class="console-tabs">
+                            <button class="console-tab active" data-tab="code">Code</button>
+                            <button class="console-tab" data-tab="desc">Description</button>
                         </div>
                         <button class="copy-btn">
                             <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
@@ -170,7 +131,99 @@ section[class*="panels__"] button[aria-label="User Settings"] {
                         </button>
                     </div>
                     <div class="console-body">
-                        <pre><code class="language-css">[data-list-item-id^=channels___],
+                        <div class="tab-content active" data-tab-panel="code">
+                            <pre><code class="language-css">[class*="channel__"] [href="/store"] {
+    display: none !important;
+}</code></pre>
+                        </div>
+                        <div class="tab-content" data-tab-panel="desc">
+                            <div class="description-tab-body">
+                                <p class="snippet-desc">Hides the Nitro store button from the direct messages list,
+                                    decluttering the navigation and bringing a simpler layout to your sidebar.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet-row">
+            <div class="snippet-image-column">
+                <div class="image-card">
+                    <div class="card-image-container">
+                        <img src="images/game-fix.png" alt="Fixes the color of game toggle button">
+                    </div>
+                    <div class="card-info">
+                        <div class="author-area">Created by <span class="author-name">Bobjoerules</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="snippet-code-column">
+                <div class="code-console">
+                    <div class="console-header">
+                        <div class="console-title">Fixes the color of game toggle button</div>
+                        <div class="console-tabs">
+                            <button class="console-tab active" data-tab="code">Code</button>
+                            <button class="console-tab" data-tab="desc">Description</button>
+                        </div>
+                        <button class="copy-btn">
+                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="btn-text">Copy Code</span>
+                        </button>
+                    </div>
+                    <div class="console-body">
+                        <div class="tab-content active" data-tab-panel="code">
+                            <pre><code class="language-css">button[class*="button__"][class*="lookBlank__"] {
+    color: hsla(0, 0%, 100%, .9) !important;
+}</code></pre>
+                        </div>
+                        <div class="tab-content" data-tab-panel="desc">
+                            <div class="description-tab-body">
+                                <p class="snippet-desc">Corrects the default low-contrast coloring of the game toggle
+                                    button in client modifications to correctly align with other buttons.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="snippet-row">
+            <div class="snippet-image-column">
+                <div class="image-card">
+                    <div class="card-image-container">
+                        <img src="images/channel-fix.png"
+                            alt="Clean Channel Names">
+                    </div>
+                    <div class="card-info">
+                        <div class="author-area">Created by <span class="author-name">Bobjoerules</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="snippet-code-column">
+                <div class="code-console">
+                    <div class="console-header">
+                        <div class="console-title">Clean Channel Names</div>
+                        <div class="console-tabs">
+                            <button class="console-tab active" data-tab="code">Code</button>
+                            <button class="console-tab" data-tab="desc">Description</button>
+                        </div>
+                        <button class="copy-btn">
+                            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            <span class="btn-text">Copy Code</span>
+                        </button>
+                    </div>
+                    <div class="console-body">
+                        <div class="tab-content active" data-tab-panel="code">
+                            <pre><code class="language-css">[data-list-item-id^=channels___],
 [class^=titleWrapper] > h1, 
 [class^=resultChannel], 
 [class^=channelMention], 
@@ -192,6 +245,14 @@ section[class*="panels__"] button[aria-label="User Settings"] {
 {
     font-family: "Dashless", var(--font-primary);
 }</code></pre>
+                        </div>
+                        <div class="tab-content" data-tab-panel="desc">
+                            <div class="description-tab-body">
+                                <p class="snippet-desc">Replaces the default channel naming fonts with the custom
+                                    Dashless font to automatically capitalize text channels and convert hyphens into
+                                    readable spaces.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -24,3 +24,23 @@ copyButtons.forEach(button => {
         }
     });
 });
+
+const consoles = document.querySelectorAll('.code-console');
+consoles.forEach(consoleEl => {
+    const tabs = consoleEl.querySelectorAll('.console-tab');
+    const contents = consoleEl.querySelectorAll('.tab-content');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const targetTab = tab.getAttribute('data-tab');
+            tabs.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+            contents.forEach(content => {
+                if (content.getAttribute('data-tab-panel') === targetTab) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+        });
+    });
+});
