@@ -32,6 +32,66 @@ body {
     margin: 0 auto;
 }
 
+.platform-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.platform-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    padding: 0.6rem 1.2rem;
+    border-radius: 12px;
+    color: var(--text-primary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.platform-btn img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.platform-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.platform-btn:hover img {
+    transform: scale(1.1);
+}
+
+#btn-betterdiscord:hover {
+    border-color: #3e82e5;
+    box-shadow: 0 4px 20px rgba(62, 130, 229, 0.3);
+    color: #3e82e5;
+}
+
+#btn-vencord:hover {
+    border-color: #e84393;
+    box-shadow: 0 4px 20px rgba(232, 67, 147, 0.3);
+    color: #e84393;
+}
+
+#btn-stylus:hover {
+    border-color: #00b4d8;
+    box-shadow: 0 4px 20px rgba(0, 180, 216, 0.3);
+    color: #00b4d8;
+}
+
+
 .logo {
     font-size: 2.5rem;
     font-weight: 800;
@@ -89,6 +149,7 @@ body {
     border-radius: 18px;
     overflow: hidden;
     cursor: default;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
     transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s, box-shadow 0.4s;
     display: flex;
     flex-direction: column;

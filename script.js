@@ -44,3 +44,13 @@ consoles.forEach(consoleEl => {
         });
     });
 });
+
+const stylusBtn = document.getElementById('btn-stylus');
+if (stylusBtn) {
+    const isFirefox = typeof InstallTrigger !== 'undefined' || navigator.userAgent.toLowerCase().includes('firefox');
+    if (isFirefox) {
+        stylusBtn.href = 'https://addons.mozilla.org/en-US/firefox/addon/styl-us/';
+    } else {
+        stylusBtn.href = 'https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne';
+    }
+}
